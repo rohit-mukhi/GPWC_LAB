@@ -20,7 +20,7 @@ int main() {
     textureBee.loadFromFile("graphics/bee.png");
     Sprite spriteBee;
     spriteBee.setTexture(textureBee);
-    spriteBee.setPosition(10, 800);
+    spriteBee.setPosition(10, 600);
 
     Texture textureCloud;
     textureCloud.loadFromFile("graphics/cloud.png");
@@ -45,7 +45,7 @@ int main() {
         if(spriteCloud.getPosition().x > 1920) {
             spriteCloud.setPosition(0, 400);
         } else {
-            spriteCloud .setPosition(spriteCloud.getPosition().x+dt.asSeconds() * cloudSpeedPerSec, 500);
+            spriteCloud .setPosition(spriteCloud.getPosition().x+dt.asSeconds() * cloudSpeedPerSec, 400);
         }
 
         window.clear();
